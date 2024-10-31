@@ -122,7 +122,7 @@
 }
 /*footer css*/
 .footer__container {
-    background: #141414;
+    background: #282b3b;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -155,18 +155,18 @@
 }
 
 .footer__link__items p {
-    color: #dadb7b;
+    color: #fff;
     margin-bottom: 0.5rem;
 }
 
 .footer__link__items h2 {
-    color: #dadb7b;
+    color: #fff;
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
 .footer__link__items a {
-    color: rgb(238, 238, 138);
+    color: #fff;
     text-decoration: none;
     margin: 0.5rem 0;
     transition: color 0.3s ease;
@@ -401,6 +401,46 @@ textarea.input{
     font-size: 1rem;
     font-weight: 500;
 }
+
+/*Project css*/
+.project__content{
+    text-align: center;
+    color: #fff;
+    background: #707793;
+    width: 100%;
+    min-height: 90vh;
+    display: grid;
+    margin: auto;
+    justify-content: center;  
+}
+.project__content h2{
+    padding: 5px;
+    font-size: 2rem;
+    font-weight: 1000;
+}
+.project__container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    padding: 2px;
+}
+.project__card{
+    background-color: #282b3b;
+    padding: 3px;
+    height: 300px;
+    border-radius: 8px;
+    text-align: left;
+}
+.project__card h3{
+    margin-bottom: 75px;
+}
+.project__card p{
+    margin:0.5rem 0;
+}
+.project__link{
+    color: #ffdab9;
+    text-decoration: none;
+}
 @media screen and (max-width: 960px) {
     .navbar_container {
         flex-direction: row;
@@ -471,5 +511,40 @@ textarea.input{
 
     .footer__link__items h2 {
         font-size: 1.3rem;
+    }
+    .container{
+        height: auto;
+        padding: 20px;
+    }
+    .item{
+        grid-template-columns: 1fr;
+        max-width: 90%;
+        height: auto;
+        box-shadow: none;
+    }
+    .img_contact{
+        height: 250px;
+        width: 250px;
+    }
+    form{
+        padding: 0 20px;
+    }
+    .project__content{
+        padding: 20px;
+        text-align: center;
+    }
+    .project__container{
+        grid-template-columns: 1fr;
+    }
+    .project__card{
+        height: auto;
+        padding: 1rem;
+        margin-bottom: 20px;
+    }
+    .project__card h3{
+        margin-bottom: 20px;
+    }
+    .project__link{
+        font-size: 1rem;
     }
 }
