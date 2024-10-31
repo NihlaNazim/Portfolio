@@ -365,9 +365,16 @@ form{
     left: 10px;
     padding-left: 10px;
     transform: translateY(-50%);
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 500;
     color: #fff;
+    transition: .3s;
+}
+textarea.input{
+    resize: none;
+    min-height: 150px;
+    overflow: auto;
+    
 }
 /*set the name, email, tele no above the label*/
 .input-box .input:focus ~ label,
@@ -378,6 +385,21 @@ form{
     font-weight: 500;
     font-size: 0.8rem;
     padding: 5px;
+}
+.btn{
+    position: relative;
+    background: #707793;
+    background-image: linear-gradient(to right,#ffdab9 0%,#aaede6 50%,#ecd9ff 100% );
+    text-decoration: none;
+    color: #282b3b;
+    border: none;
+    border-radius: 2px;
+    overflow:hidden ;
+    top: 100px;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 500;
 }
 @media screen and (max-width: 960px) {
     .navbar_container {
