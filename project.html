@@ -3,6 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Kumbh+Sans:wght@100..900&family=Rubik+Wet+Paint&family=Shadows+Into+Light&display=swap" rel="stylesheet">
         <link rel="StyleSheet" href="styleSheet.css">
         <title>Project/nihla-nazim</title>
     </head>
@@ -31,44 +34,46 @@
             </div>
         </nav>
         <!--Project Section-->
-        <div class="project__content">
+        <main class="project">
             <h2>My Project</h2>
-            <div class="project__container">
-                <article class="project__card">
-                    <h3>Library Management System</h3>
-                    <p><strong>Description: </strong> A java-bassed libraray management system allows user to manage 
-                        books,members, and borrow/return opration efficiantly.</p>
-                    <p><strong>Technologies: </strong> Java,OOP</p>
-                    <a href="https://github.com/NihlaNazim/Library_System.git" class="project__link">View Project here</a>
-                </article>
-                <article class="project__card">
-                    <h3>Plane Managemnet System</h3>
-                    <p><strong>Description: </strong> A java-bassed Plane management system allows user to manage 
-                        seat,show seating plan, and buy/return opration efficiantly.</p>
-                    <p><strong>Technologies: </strong> Java,OOP</p>
-                    <a href="https://github.com/NihlaNazim/plane-management.git" class="project__link">View Project here</a>
-                </article>
-                <article class="project__card">
-                    <h3>LandLore-Group project</h3>
-                    <p><strong>Description: </strong>A basic website.</p>
-                    <p><strong>Technologies: </strong> HTML,CSS,JS</p>
-                    <a href="https://github.com/NihlaNazim/website.git" class="project__link">View Project here</a>
-                </article>
-            </div>
-            <div class="blog__container">
+                <section class="project__container">      <!-- i have used a child cominator here, becouse i have use properly a secton and on then articles-->
+                    <article class="project__card">
+                        <h3>Library Management System</h3>
+                        <p><strong>Description: </strong> A java-bassed libraray management system allows user to manage 
+                            books,members, and borrow/return opration efficiantly.</p>
+                        <p><strong>Technologies: </strong> Java,OOP</p>
+                        <a href="https://github.com/NihlaNazim/Library_System.git" class="project__link">View Project here</a>
+                    </article>
+                    <article class="project__card">
+                        <h3>Plane Managemnet System</h3>
+                        <p><strong>Description: </strong> A java-bassed Plane management system allows user to manage 
+                            seat,show seating plan, and buy/return opration efficiantly.</p>
+                        <p><strong>Technologies: </strong> Java,OOP</p>
+                        <a href="https://github.com/NihlaNazim/plane-management.git" class="project__link">View Project here</a>
+                    </article>
+                    <article class="project__card">
+                        <h3>LandLore-Group project</h3>
+                        <p><strong>Description: </strong>A basic website.</p>
+                        <p><strong>Technologies: </strong> HTML,CSS,JS</p>
+                        <a href="https://github.com/NihlaNazim/website.git" class="project__link">View Project here</a>
+                    </article>
+                </section>
+            <section class="blog__container">
                 <h1>BLOGS</h1>
-                    <div class="blog__card1">
+                    <div class="blog__card">
                     <h2>My journey in Web Developmenet</h2>
+                    <time datetime="2024-03-15">March 15, 2024</time>
                     <p>This article about my journey in web development.</p>
-                    <a href="Blog1.html">View More..</a>
+                    <a href="blog1.html">View More..</a>
                 </div>
-                <div class="blog__card2">
+                <div class="blog__card">
                     <h2>Learning Java and Object-Oriented Programming</h2>
+                    <time datetime="2024-01-26">January 26, 2024</time>
                     <p>This article about my journey in java programming.</p>
                     <a href="blog2.html">View More..</a>
                 </div>
-            </div>
-        </div>
+            </section>
+        </main>
         <!--footer section-->
         <footer class="footer__container">
             <div class="footer__link">
